@@ -1,0 +1,18 @@
+<% include partials/header  %>
+<% include partials/instruction  %>
+
+    <div class="headder">
+        <div class="txtArea_div">
+            <textarea name="JSONTEXT" id="txtArea" cols="180" rows="20" placeholder="Paste your JSON Text here!"></textarea>
+        </div>
+        <div class="btn-container">
+            <a href="#" class = "btn" id="btn-submit">Submit</a>
+            <a href="#" class = "btn" id="btn-clear">clear</a>
+            <a href="#" class = "btn" id="btn-exportB2B">Export B2B</a>
+            <a href="#" class = "btn" id="btn-exportCN">Export CN</a>
+        </div>
+    </div>
+
+<% include partials/b2b  %>
+<% include partials/cn  %>
+<% include partials/footer %>
