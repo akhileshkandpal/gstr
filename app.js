@@ -9,3 +9,5 @@ app.get("/",(req,res) => {
 })
 
 app.listen(process.env.PORT || 5000);
+
+//process.env.PORT || 5000

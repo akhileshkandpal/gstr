@@ -34,13 +34,23 @@ document.getElementById("btn-submit").addEventListener("click",function(){
 
                 if(item["iamt"] != undefined){
                     html = html + "<th>" + item["iamt"] + "</th>"
-                    html = html + "<th>" + 0 + "</th>"
-                    html = html + "<th>" + 0 + "</th>"
                 }else{
-                    html = html + "<th>" + 0 + "</th>"
+                	html = html + "<th>" + 0 + "</th>"
+                }
+                if(item["camt"] != undefined){
                     html = html + "<th>" + item["camt"] + "</th>"
+                }else{
+                	html = html + "<th>" + 0 + "</th>"
+                }
+                if(item["samt"] != undefined){
                     html = html + "<th>" + item["samt"] + "</th>"
-                }            
+                }else{
+                	html = html + "<th>" + 0 + "</th>"
+                }
+
+
+
+                               
             }    
             html = html + "</tr>"
             
@@ -77,13 +87,20 @@ document.getElementById("btn-submit").addEventListener("click",function(){
                 htmlcn =  htmlcn + "<th>" + item.rt + "%" + "</th>"
                 if(item["iamt"] != undefined){
                     htmlcn = htmlcn + "<th>" + item["iamt"] + "</th>"
-                    htmlcn = htmlcn + "<th>" + 0 + "</th>"
-                    htmlcn = htmlcn + "<th>" + 0 + "</th>"
                 }else{
-                    htmlcn = htmlcn + "<th>" + 0 + "</th>"
+                	htmlcn = htmlcn + "<th>" + 0 + "</th>"
+                }
+                if(item["camt"] != undefined){
                     htmlcn = htmlcn + "<th>" + item["camt"] + "</th>"
+                }else{
+                	htmlcn = htmlcn + "<th>" + 0 + "</th>"
+                }
+                if(item["samt"] != undefined){
                     htmlcn = htmlcn + "<th>" + item["samt"] + "</th>"
-                }                        }
+                }else{
+                	htmlcn = htmlcn + "<th>" + 0 + "</th>"
+                }
+                                      }
             htmlcn = htmlcn + "</tr>";
         
         }
