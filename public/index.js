@@ -5,7 +5,7 @@ document.getElementById("btn-submit").addEventListener("click",function(){
     if(gstr.filing_typ == "M"){
         filingPeriod = "month"
     }else{filingPeriod = "quater ended in month"}
-    document.getElementById("b2bHeading").innerHTML = "GSTR 1 B2B Transactions for GSTIN " + gstr.gstin + " holder for the " + filingPeriod + " of " + months[parseInt(gstr.fp.substring(0,2))-1] + "-" + gstr.fp.substring(2,6) + ".";  
+    document.getElementById("b2bHeading").innerHTML = "GSTR 1/4A B2B Transactions for GSTIN " + gstr.gstin + " holder for the " + filingPeriod + " of " + months[parseInt(gstr.fp.substring(0,2))-1] + "-" + gstr.fp.substring(2,6) + ".";  
     var b2b = gstr["b2b"];
     var b2bArr = [];
     var html = ""
@@ -52,7 +52,7 @@ document.getElementById("btn-submit").addEventListener("click",function(){
     document.getElementById("tblhead_gstrB2B").innerHTML = "<th>GSTIN</th><th>Invoice No.</th><th>Invoice Date</th><th>POS</th><th>Invoice Value</th><th>Invoice Type</th><th>Reverse Charge</th><th>Taxable Value</th><th>Rate</th><th>IGST</th><th>CGST</th><th>SGST</th>"
     document.getElementById("table1").innerHTML = html;
 
-    document.getElementById("cnHeading").innerHTML = "GSTR 1 Credit Notes Transactions for GSTIN " + gstr.gstin + " holder for the " + filingPeriod + " of " + months[parseInt(gstr.fp.substring(0,2))-1] + "-" + gstr.fp.substring(2,6) + ".";
+    document.getElementById("cnHeading").innerHTML = "GSTR 1/4A Credit Notes Transactions for GSTIN " + gstr.gstin + " holder for the " + filingPeriod + " of " + months[parseInt(gstr.fp.substring(0,2))-1] + "-" + gstr.fp.substring(2,6) + ".";
     var htmlcn = ""
     
     for(var i = 0; i < gstr.cdnr.length; i++){
