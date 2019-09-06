@@ -71,6 +71,7 @@ document.getElementById("btn-submit").addEventListener("click",function(){
                 htmlcn =  htmlcn + "<th>" + note.nt_dt + "</th>"
                 htmlcn =  htmlcn + "<th>" + note.inum + "</th>"
                 htmlcn =  htmlcn + "<th>" + note.idt + "</th>"
+                htmlcn =  htmlcn + "<th>" + note.ntty + "</th>"
                 htmlcn =  htmlcn + "<th>" + note.val + "</th>"
                 htmlcn =  htmlcn + "<th>" + item.txval + "</th>"     
                 htmlcn =  htmlcn + "<th>" + item.rt + "%" + "</th>"
@@ -90,7 +91,7 @@ document.getElementById("btn-submit").addEventListener("click",function(){
 
     }
 
-    document.getElementById("tblhead_gstrCN").innerHTML = "<th>GSTIN</th><th>Credit Note No.</th><th>Credit Note Date</th><th>Original Invoice No.</th><th>Original Invoice Date</th><th>Credit Note Value</th><th>Taxable Value</th><th>Rate</th><th>IGST</th><th>CGST</th><th>SGST</th>";
+    document.getElementById("tblhead_gstrCN").innerHTML = "<th>GSTIN</th><th>Credit Note No.</th><th>Credit Note Date</th><th>Original Invoice No.</th><th>Original Invoice Date</th><th>Type</th><th>Credit Note Value</th><th>Taxable Value</th><th>Rate</th><th>IGST</th><th>CGST</th><th>SGST</th>";
     document.getElementById("table2").innerHTML = htmlcn;
 
 
