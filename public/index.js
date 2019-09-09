@@ -17,8 +17,9 @@ document.getElementById("btn-submit").addEventListener("click",function(){
         var invoices = b2b[i]["inv"];
         for(var j = 0; j < invoices.length; j++){
             var items = invoices[j]["itms"];
-            html = html + "<tr>"
+            
             for(var k = 0; k < items.length; k++){
+                html = html + "<tr>"
                 // b2bArr.push([gstin,items[k]["itm_det"]["txval"],items[k]["itm_det"]["rt"],items[k]["itm_det"]["csamt"],items[k]["itm_det"]["samt"],items[k]["itm_det"]["camt"]]);
                 var item = items[k]["itm_det"];
                 
@@ -49,10 +50,10 @@ document.getElementById("btn-submit").addEventListener("click",function(){
                 }
 
 
-
+                html = html + "</tr>"
                                
             }    
-            html = html + "</tr>"
+            
             
         }
 
@@ -73,8 +74,9 @@ document.getElementById("btn-submit").addEventListener("click",function(){
         for(var j = 0; j < notes.length; j++){
             var note = notes[j];
             var items = note.itms
-            htmlcn = htmlcn + "<tr>";
+            
             for(var k = 0; k < items.length; k++){
+                htmlcn = htmlcn + "<tr>";
                 var item = items[k].itm_det;
                 htmlcn =  htmlcn + "<th>" + gstin + "</th>"
                 htmlcn =  htmlcn + "<th>" + note.nt_num + "</th>"
@@ -100,8 +102,9 @@ document.getElementById("btn-submit").addEventListener("click",function(){
                 }else{
                 	htmlcn = htmlcn + "<th>" + 0 + "</th>"
                 }
+                htmlcn = htmlcn + "</tr>";
                                       }
-            htmlcn = htmlcn + "</tr>";
+           
         
         }
 
