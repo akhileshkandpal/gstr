@@ -36,21 +36,20 @@ th{
     display: block;
     text-align: center;
 }
-.btn:active,btn:link,.btn{
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid black;
-    width: 150px;
-    height: 50px;
-    line-height: 50px;
-    vertical-align: middle;
-    border-radius: 100px;
-    font-weight: 500;
-    font-size: 20px;
-    text-transform: uppercase;
-    background-image: linear-gradient(to right bottom,rgb(255, 255, 255),rgb(100, 237, 207));
-    color: black;
-}
+//.btn:active,btn:link,.btn{
+//    display: inline-block;
+//    text-decoration: none;
+//    border: 1px solid black;
+//    width: 150px;
+//    height: 50px;
+//    line-height: 50px;
+//    vertical-align: middle;
+//    border-radius: 100px;
+//    font-weight: 500;
+//    font-size: 20px;
+//    text-transform: uppercase;
+    
+//}
 
 footer{
     margin-top: 50px;
