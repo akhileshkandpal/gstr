@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- README: Replace placeholders (phone, email, URLs, Formspree ID, Google Analytics ID). To deploy, host this index.html (and script.js) on any static host like Netlify or GitHub Pages. Update the Formspree endpoint in the contact form action or replace with mailto:. -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A K Kandpal & Associates | Chartered Accountant</title>
+  <meta name="description" content="Trusted Chartered Accountant in Delhi for tax filing, GST, compliance, and accounting. 13 years experience." />
+  <link rel="canonical" href="https://example.com/" />
+  <meta property="og:title" content="A K Kandpal & Associates" />
+  <meta property="og:description" content="Trusted Chartered Accountant for Individuals & SMEs" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=AK+Kandpal" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="A K Kandpal & Associates" />
+  <meta name="twitter:description" content="Trusted Chartered Accountant for Individuals & SMEs" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#1d4ed8'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+    #back-to-top { position: fixed; bottom: 1rem; right: 1rem; display: none; }
+    nav a.active { color: #1d4ed8; }
+  </style>
+  <!-- Google Analytics placeholder -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body class="font-inter text-gray-800">
+  <header class="fixed top-0 w-full bg-white shadow z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <a href="#hero" class="font-bold text-lg">A K Kandpal & Associates</a>
+      <div class="space-x-4 hidden md:block">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#why" class="nav-link">Why Me</a>
+        <a href="#faqs" class="nav-link">FAQs</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button id="mobile-menu" class="md:hidden" aria-label="Open Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+      </button>
+    </nav>
+    <div id="mobile-nav" class="md:hidden hidden bg-white border-t">
+      <a href="#hero" class="block px-4 py-2 nav-link">Home</a>
+      <a href="#about" class="block px-4 py-2 nav-link">About</a>
+      <a href="#services" class="block px-4 py-2 nav-link">Services</a>
+      <a href="#pricing" class="block px-4 py-2 nav-link">Pricing</a>
+      <a href="#why" class="block px-4 py-2 nav-link">Why Me</a>
+      <a href="#faqs" class="block px-4 py-2 nav-link">FAQs</a>
+      <a href="#testimonials" class="block px-4 py-2 nav-link">Testimonials</a>
+      <a href="#contact" class="block px-4 py-2 nav-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="pt-24 pb-16 bg-gray-50 text-center fade-in">
+    <h1 class="text-3xl md:text-5xl font-bold mb-4">Trusted Chartered Accountant for Individuals & SMEs</h1>
+    <p class="mb-6">Compliance, accuracy, and on-time filings for peace of mind.</p>
+    <div class="space-x-2">
+      <a data-wa href="https://wa.me/919654114541?text=Hi%20Akhilesh,%20I%20need%20help%20with%20tax%20services" class="bg-accent text-white px-4 py-2 rounded shadow">WhatsApp Now</a>
+      <a href="tel:+919654114541" class="bg-gray-200 px-4 py-2 rounded">Call</a>
+      <a href="#contact" class="bg-gray-200 px-4 py-2 rounded">Get a Quote</a>
+    </div>
+    <div class="mt-6 flex justify-center space-x-4 text-sm">
+      <span>ACA</span><span>ICAI Member</span><span>On-time filings</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 max-w-6xl mx-auto px-4 fade-in">
+    <div class="md:flex items-center gap-8">
+      <div class="md:w-2/3">
+        <h2 class="text-2xl font-bold mb-4">About Akhilesh</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li>13 years of hands-on experience in Direct Tax & GST</li>
+          <li>Compliance expert for individuals, SMEs, and start-ups</li>
+          <li>FP&A background ensuring financial clarity</li>
+          <li>Dedicated to accurate, timely filings</li>
+        </ul>
+      </div>
+      <div class="md:w-1/3 flex justify-center mt-8 md:mt-0">
+        <div class="w-40 h-40 rounded-full bg-gray-200"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-50 fade-in">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-8">Services</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded shadow">
+          <div class="flex items-center mb-4"><i data-feather="file-text" class="mr-2"></i><h3 class="font-semibold">Income Tax</h3></div>
+          <ul class="text-sm list-disc list-inside mb-4">
+            <li>ITR-1 to ITR-4 filing</li>
+            <li>Capital gains & rental income</li>
+            <li>Other income disclosures</li>
+          </ul>
+          <p class="mb-4 text-sm">Starting at ₹1,000</p>
+          <a data-wa href="https://wa.me/919654114541?text=Hi%20Akhilesh,%20I%20need%20help%20with%20Income%20Tax" class="text-accent underline">Enquire</a>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <div class="flex items-center mb-4"><i data-feather="percent" class="mr-2"></i><h3 class="font-semibold">GST</h3></div>
+          <ul class="text-sm list-disc list-inside mb-4">
+            <li>Registration</li>
+            <li>GSTR-1/3B filing</li>
+            <li>Annual return & reconciliation</li>
+          </ul>
+          <p class="mb-4 text-sm">Starting at ₹1,500</p>
+          <a data-wa href="https://wa.me/919654114541?text=Hi%20Akhilesh,%20I%20need%20help%20with%20GST" class="text-accent underline">Enquire</a>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <div class="flex items-center mb-4"><i data-feather="scissors" class="mr-2"></i><h3 class="font-semibold">TDS/TCS</h3></div>
+          <ul class="text-sm list-disc list-inside mb-4">
+            <li>24Q/26Q returns</li>
+            <li>Lower/NIL deduction certificate</li>
+            <li>Consultation & filing</li>
+          </ul>
+          <p class="mb-4 text-sm">Starting at ₹2,000</p>
+          <a data-wa href="https://wa.me/919654114541?text=Hi%20Akhilesh,%20I%20need%20help%20with%20TDS/TCS" class="text-accent underline">Enquire</a>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <div class="flex items-center mb-4"><i data-feather="briefcase" class="mr-2"></i><h3 class="font-semibold">Incorporation & ROC</h3></div>
+          <ul class="text-sm list-disc list-inside mb-4">
+            <li>Pvt Ltd/LLP/OPC setup</li>
+            <li>DIN & name approval</li>
+            <li>Annual filings</li>
+          </ul>
+          <p class="mb-4 text-sm">Starting at ₹5,000</p>
+          <a data-wa href="https://wa.me/919654114541?text=Hi%20Akhilesh,%20I%20need%20help%20with%20Incorporation" class="text-accent underline">Enquire</a>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <div class="flex items-center mb-4"><i data-feather="book" class="mr-2"></i><h3 class="font-semibold">Accounting & MIS</h3></div>
+          <ul class="text-sm list-disc list-inside mb-4">
+            <li>Books cleanup</li>
+            <li>Monthly accounts</li>
+            <li>Management reporting</li>
+          </ul>
+          <p class="mb-4 text-sm">Starting at ₹4,000</p>
+          <a data-wa href="https://wa.me/919654114541?text=Hi%20Akhilesh,%20I%20need%20help%20with%20Accounting" class="text-accent underline">Enquire</a>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <div class="flex items-center mb-4"><i data-feather="check-circle" class="mr-2"></i><h3 class="font-semibold">Audit Support</h3></div>
+          <ul class="text-sm list-disc list-inside mb-4">
+            <li>Statutory/Tax/Internal coordination</li>
+            <li>Schedule preparation</li>
+            <li>Liaison with auditors</li>
+          </ul>
+          <p class="mb-4 text-sm">Starting at ₹3,500</p>
+          <a data-wa href="https://wa.me/919654114541?text=Hi%20Akhilesh,%20I%20need%20help%20with%20Audit%20Support" class="text-accent underline">Enquire</a>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <div class="flex items-center mb-4"><i data-feather="layers" class="mr-2"></i><h3 class="font-semibold">Other</h3></div>
+          <ul class="text-sm list-disc list-inside mb-4">
+            <li>PAN/TAN, DSC</li>
+            <li>15CA/CB, FEMA/LRS advisory</li>
+            <li>Start-up registrations</li>
+          </ul>
+          <p class="mb-4 text-sm">Custom pricing</p>
+          <a data-wa href="https://wa.me/919654114541?text=Hi%20Akhilesh,%20I%20need%20help%20with%20Other%20services" class="text-accent underline">Enquire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 fade-in">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-8">Packages / Pricing</h2>
+      <div class="flex justify-center mb-4">
+        <label class="flex items-center space-x-2">Monthly
+          <input id="price-toggle" type="checkbox" class="toggle mx-2">Annual
+        </label>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded shadow text-center">
+          <h3 class="font-semibold mb-4">Starter</h3>
+          <p class="text-3xl font-bold"><span class="price" data-month="₹1,000" data-annual="₹10,000">₹1,000</span></p>
+          <ul class="text-sm list-disc list-inside my-4">
+            <li>Basic returns</li>
+            <li>Email support</li>
+          </ul>
+          <p class="text-xs">Final pricing after requirement assessment. Govt fees extra.</p>
+        </div>
+        <div class="p-6 bg-white rounded shadow text-center">
+          <h3 class="font-semibold mb-4">Standard</h3>
+          <p class="text-3xl font-bold"><span class="price" data-month="₹2,500" data-annual="₹25,000">₹2,500</span></p>
+          <ul class="text-sm list-disc list-inside my-4">
+            <li>GST & TDS filings</li>
+            <li>Phone support</li>
+          </ul>
+          <p class="text-xs">Final pricing after requirement assessment. Govt fees extra.</p>
+        </div>
+        <div class="p-6 bg-white rounded shadow text-center">
+          <h3 class="font-semibold mb-4">Business</h3>
+          <p class="text-3xl font-bold"><span class="price" data-month="₹5,000" data-annual="₹50,000">₹5,000</span></p>
+          <ul class="text-sm list-disc list-inside my-4">
+            <li>End-to-end compliance</li>
+            <li>Dedicated support</li>
+          </ul>
+          <p class="text-xs">Final pricing after requirement assessment. Govt fees extra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Me -->
+  <section id="why" class="py-16 bg-gray-50 fade-in">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-8">Why Choose Me</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="p-6 bg-white rounded shadow text-center"><i data-feather="clock" class="mx-auto mb-2"></i><p>Timely filings</p></div>
+        <div class="p-6 bg-white rounded shadow text-center"><i data-feather="message-square" class="mx-auto mb-2"></i><p>Clear communication</p></div>
+        <div class="p-6 bg-white rounded shadow text-center"><i data-feather="shield" class="mx-auto mb-2"></i><p>Data security</p></div>
+        <div class="p-6 bg-white rounded shadow text-center"><i data-feather="thumbs-up" class="mx-auto mb-2"></i><p>Fair pricing</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section id="faqs" class="py-16 fade-in">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-8">FAQs</h2>
+      <div class="space-y-4">
+        <details class="bg-white p-4 rounded shadow">
+          <summary class="font-semibold cursor-pointer">What documents do I need for ITR?</summary>
+          <p class="mt-2 text-sm">PAN, Form 16, investment proofs, bank statements, and other income details.</p>
+        </details>
+        <details class="bg-white p-4 rounded shadow">
+          <summary class="font-semibold cursor-pointer">How do we share data securely?</summary>
+          <p class="mt-2 text-sm">Data is shared via encrypted channels and stored with strict confidentiality.</p>
+        </details>
+        <details class="bg-white p-4 rounded shadow">
+          <summary class="font-semibold cursor-pointer">Do you support completely online onboarding?</summary>
+          <p class="mt-2 text-sm">Yes, onboarding and document exchange can be handled fully online.</p>
+        </details>
+        <details class="bg-white p-4 rounded shadow">
+          <summary class="font-semibold cursor-pointer">Do you handle scrutiny notices?</summary>
+          <p class="mt-2 text-sm">Support for scrutiny notices is available as a separate engagement.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 bg-gray-50 fade-in">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-8">Testimonials</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-white rounded shadow">
+          <p class="mb-2">"Akhilesh made tax filing effortless."</p>
+          <div class="text-yellow-400">★★★★★</div>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <p class="mb-2">"Professional and prompt service."</p>
+          <div class="text-yellow-400">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 fade-in">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-8">Get in Touch</h2>
+      <form id="contact-form" action="https://formspree.io/f/yourform" method="POST" class="space-y-4">
+        <div>
+          <label class="block text-sm" for="name">Name</label>
+          <input class="w-full border rounded p-2" type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label class="block text-sm" for="email">Email</label>
+          <input class="w-full border rounded p-2" type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label class="block text-sm" for="phone">Phone</label>
+          <input class="w-full border rounded p-2" type="tel" id="phone" name="phone" required />
+        </div>
+        <div>
+          <label class="block text-sm" for="service">Service</label>
+          <select id="service" name="service" class="w-full border rounded p-2" required>
+            <option value="Income Tax">Income Tax</option>
+            <option value="GST">GST</option>
+            <option value="TDS/TCS">TDS/TCS</option>
+            <option value="Incorporation & ROC">Incorporation & ROC</option>
+            <option value="Accounting & MIS">Accounting & MIS</option>
+            <option value="Audit Support">Audit Support</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm" for="message">Message</label>
+          <textarea class="w-full border rounded p-2" id="message" name="message" rows="4"></textarea>
+        </div>
+        <p class="text-xs">We don’t share your data. Attachments accepted over secure links only.</p>
+        <button class="bg-accent text-white px-4 py-2 rounded" type="submit">Submit</button>
+        <div id="form-result" class="text-sm mt-2"></div>
+      </form>
+      <div id="wa-container" class="hidden mt-4 text-center">
+        <a id="wa-link" data-wa href="#" class="bg-green-500 text-white px-4 py-2 rounded">WhatsApp Quick Enquiry</a>
+      </div>
+      <div class="mt-8 text-center">
+        <p><a class="text-accent" href="tel:+919654114541">+91-9654114541</a> | <a class="text-accent" href="mailto:akhilesh.kandpal42@gmail.com">akhilesh.kandpal42@gmail.com</a></p>
+        <p>Mon–Sat: 9:00–18:00 IST</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-gray-200 py-6 text-center text-sm">
+    <div class="mb-4">Member of ICAI. Services provided as per engagement letter.</div>
+    <div class="space-x-4 mb-4">
+      <button class="underline" data-modal="privacy">Privacy Policy</button>
+      <button class="underline" data-modal="terms">Terms</button>
+      <button class="underline" data-modal="disclaimer">Disclaimer</button>
+    </div>
+    <div>© <span id="year"></span> A K Kandpal & Associates</div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top" class="bg-accent text-white p-2 rounded-full shadow"><i data-feather="arrow-up"></i></button>
+
+  <!-- Modals -->
+  <div id="privacy" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-6 rounded max-w-md">
+      <h3 class="text-lg font-bold mb-2">Privacy Policy</h3>
+      <p class="text-sm mb-4">Sample privacy policy text.</p>
+      <button class="bg-accent text-white px-4 py-2 rounded close-modal">Close</button>
+    </div>
+  </div>
+  <div id="terms" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-6 rounded max-w-md">
+      <h3 class="text-lg font-bold mb-2">Terms</h3>
+      <p class="text-sm mb-4">Sample terms text.</p>
+      <button class="bg-accent text-white px-4 py-2 rounded close-modal">Close</button>
+    </div>
+  </div>
+  <div id="disclaimer" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-6 rounded max-w-md">
+      <h3 class="text-lg font-bold mb-2">Disclaimer</h3>
+      <p class="text-sm mb-4">Sample disclaimer text.</p>
+      <button class="bg-accent text-white px-4 py-2 rounded close-modal">Close</button>
+    </div>
+  </div>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "A K Kandpal & Associates",
+    "url": "https://example.com",
+    "telephone": "+91-9654114541",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Delhi",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What documents do I need for ITR?",
+        "acceptedAnswer": {"@type": "Answer","text": "PAN, Form 16, investment proofs, bank statements, and other income details."}
+      },
+      {
+        "@type": "Question",
+        "name": "How do we share data securely?",
+        "acceptedAnswer": {"@type": "Answer","text": "Data is shared via encrypted channels and stored with strict confidentiality."}
+      },
+      {
+        "@type": "Question",
+        "name": "Do you support completely online onboarding?",
+        "acceptedAnswer": {"@type": "Answer","text": "Yes, onboarding and document exchange can be handled fully online."}
+      },
+      {
+        "@type": "Question",
+        "name": "Do you handle scrutiny notices?",
+        "acceptedAnswer": {"@type": "Answer","text": "Support for scrutiny notices is available as a separate engagement."}
+      }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
